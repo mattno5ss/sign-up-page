@@ -4,10 +4,10 @@ function toggleTheme() {
 
     if (root.className == "dark") {
         root.className = "light";
-        modeImage.src = "./img/dark_mode_moon.svg";
+        modeImage.src = "img/dark_mode_moon.svg";
     } else {
         root.className = "dark";
-        modeImage.src = "./img/light_mode_sun.svg";
+        modeImage.src = "img/light_mode_sun.svg";
     }
 }
 
