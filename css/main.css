@@ -2,35 +2,44 @@
 THEME TOGGLE CSS
 */
 :root, :root.light {
-    --btn-border: 1px solid gray;
-    --btn-background: lightgray;
-    --base-background: white;
     --base-text: black;
-    --btn-shadow: 2px 2px 2px lightgray;
+    --right-background: whitesmoke;
+    --form-background: white;
+    --form-border: 1px solid lightgray;
+    --login-link: lightslategray;
+    --msg-color: red;
 }
 :root.dark {
-    --btn-border: 1px solid lightgray;
-    --btn-background: gray;
-    --base-background: black;
-    --base-text: white;
-    --btn-shadow: none;
-}
-body, .toggle-btn {
-    color: var(--base-text);
+    --base-text: whitesmoke;
+    --right-background: gray;
+    --form-background: darkgray;
+    --form-border: none;
+    --login-link: whitesmoke;
+    --msg-color: darkred;
 }
 body {
-    background-color: var(--base-background);
+    color: var(--base-text);
 }
 .toggle-btn {
-    border: var(--btn-border);
-    border-radius: 0.5rem;
-    background-color: var(--btn-background);
-    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 100%;
+    background-color: lightgray;
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 0.5rem;
 }
 .toggle-btn:hover {
-    filter: brightness(105%);
+    filter: brightness(110%);
     box-shadow: none;
+}
+.mode {
+    height: 32px;
+    width: 32px;
 }
 
 /*
@@ -45,6 +54,8 @@ header {
     height: 50px;
     background-color: lightslategray;
     box-shadow: 0px 3px 3px rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-end;
 }
 .container {
     position: relative;
@@ -69,7 +80,7 @@ header {
 }
 .right-side {
     position: relative;
-    background-color: whitesmoke;
+    background-color: var(--right-background);
     flex: 2;
 }
 .right-side > p {
@@ -81,9 +92,9 @@ header {
     top: 20rem;
     height: 18rem;
     width: 100%;
-    border-top: 1px solid lightgray;
+    border-top: var(--form-border);
     box-shadow: 0px 3px 3px rgb(0, 0, 0, 0.2);
-    background-color: white;
+    background-color: var(--form-background);
 }
 .input-div > p {
     margin-left: 3rem;
@@ -131,7 +142,7 @@ input:focus {
 }
 a {
     text-decoration: none;
-    color: slategray;
+    color: var(--login-link);
     font-weight: bold;
 }
 a:hover {
@@ -147,6 +158,11 @@ footer {
     background-color: lightslategray;
     color: whitesmoke;
     text-align: center;
+}
+.validation_msg {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--msg-color);
 }
 .mattno5ss {
     color: lightgray;

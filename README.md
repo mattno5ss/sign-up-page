@@ -1,3 +1,3 @@
 # sign-up-page
 
-![Example Screenshot](example.png)
+![Example Screenshot](/img/example.png)
