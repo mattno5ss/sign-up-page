@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <script src="js/main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <button type="button" class="toggle-btn"><img src="/img/dark_mode_moon.svg" alt="dark mode" class="mode"></button>
+    </header>
+    <div class="container">
+        <div class="left-side">
+            <div class="logo-div">
+                <div class="logo">
+                    <img src="/img/terminal_white.svg" alt="logo">
+                    <span class="mattno5ss">mattno5ss</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <form onsubmit="return validate()" action="" method="post">
+                <div class="input-div">
+                    <p>This is just a sample page, not a real service.</p>
+                    <div class="input-fields">
+                        <div class="field">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="user@example.com">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+                        </div>
+                        <div class="field">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" required>
+                            <span class="validation_msg"></span>
+                        </div>
+                        <div class="field">
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" name="confirm" id="confirm" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-div">
+                    <button type="submit" class="submit-btn">Create Account</button>
+                    <p>Already have an account? <a href="" class="log-in">Log in</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        copyright here
+    </footer>
+</body>
+
+</html>
