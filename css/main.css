@@ -65,7 +65,7 @@ header {
 .left-side {
     position: relative;
     flex: 1;
-    background-image: url("img/k39.jpg");
+    background-image: url("./img/k39.jpg");
 }
 .logo-div {
     position: absolute;
