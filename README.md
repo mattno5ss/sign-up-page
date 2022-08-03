@@ -1,7 +1,5 @@
 # sign-up-page
 
-Light Mode
-![Example Light Mode Screenshot](/img/example_light.png)
+Sample sign up page using HTML/CSS/JavaScript
 
-Dark Mode
-![Example Dark Mode Screenshot](/img/example_dark.png)
+[Live Preview](https://mattno5ss.github.io/sign-up-page/)
