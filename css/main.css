@@ -71,12 +71,14 @@ header {
     position: absolute;
     top: 10rem;
     width: 100%;
+    min-width: fit-content;
     height: 10rem;
     background-color: black;
     opacity: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
 }
 .right-side {
     position: relative;
@@ -95,6 +97,7 @@ header {
     border-top: var(--form-border);
     box-shadow: 0px 3px 3px rgb(0, 0, 0, 0.2);
     background-color: var(--form-background);
+    white-space: nowrap;
 }
 .input-div > p {
     margin-left: 3rem;
